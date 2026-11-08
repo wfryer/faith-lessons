@@ -37,6 +37,10 @@ li { margin: 8px 0; }
 .big div { background: #172a4d; border-radius: 10px; padding: 14px 18px; }
 .big strong { color: #e0b34a; }
 .card { background: #172a4d; border-left: 8px solid #e0b34a; border-radius: 10px; padding: 22px 26px 18px; margin: 26px 0; }
+.portrait { float: right; width: 150px; margin: 0 0 12px 22px; }
+.portrait img { display: block; width: 150px; height: 190px; object-fit: cover; object-position: center top; border-radius: 8px; border: 2px solid #2c4470; background: #0f1b33; }
+.portrait figcaption { font-family: system-ui, Arial, sans-serif; font-size: 0.72rem; color: #c9d2e6; margin-top: 4px; line-height: 1.3; }
+@media (max-width: 600px) { .portrait { float: none; margin: 0 auto 14px; } }
 .card header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 18px; }
 .card .tag { font-style: italic; margin: 0; font-size: 1.05em; }
 dl.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; margin: 14px 0 4px; }
@@ -118,7 +122,7 @@ ul.srcs { font-size: 0.82em; font-family: system-ui, Arial, sans-serif; }
 <header class="hero">
   <p class="kicker">ACE Sunday School Class &nbsp;|&nbsp; 8 November 2026</p>
   <h1>Women of the Movement</h1>
-  <p>Chapter 8 of <em>The Spirit of Justice</em> by Jemar Tisby</p>
+  <p>Chapter 8 of <a href="https://jemartisby.com/the-spirit-of-justice/" target="_blank" rel="noopener"><em>The Spirit of Justice</em></a> by Jemar Tisby</p>
   <p>Facilitated by Wes Fryer &nbsp;|&nbsp; <a href="https://followjesus.wesfryer.com" target="_blank" rel="noopener">followjesus.wesfryer.com</a></p>
 </header>
 
@@ -147,6 +151,7 @@ ul.srcs { font-size: 0.82em; font-family: system-ui, Arial, sans-serif; }
   <p>In the order Tisby presents them. Dates and places were checked against the sources linked in each card, and any disagreement with the chapter or among sources is noted under "Source check."</p>
   
 <article class="card" id="coretta" style="border-left-color:#e0b34a">
+  <figure class="portrait" id="portrait-coretta" hidden><img alt="" width="150" height="190"><figcaption></figcaption></figure>
   <header>
     <h3>Coretta Scott King</h3>
     <p class="tag" style="color:#e0b34a">Her own person, before and after Martin</p>
@@ -165,6 +170,7 @@ ul.srcs { font-size: 0.82em; font-family: system-ui, Arial, sans-serif; }
 </article>
 
 <article class="card" id="dee" style="border-left-color:#4fb3a9">
+  <figure class="portrait" id="portrait-dee" hidden><img alt="" width="150" height="190"><figcaption></figcaption></figure>
   <header>
     <h3>Ruby Dee</h3>
     <p class="tag" style="color:#4fb3a9">Art as activism</p>
@@ -183,6 +189,7 @@ ul.srcs { font-size: 0.82em; font-family: system-ui, Arial, sans-serif; }
 </article>
 
 <article class="card" id="hedgeman" style="border-left-color:#e8806a">
+  <figure class="portrait" id="portrait-hedgeman" hidden><img alt="" width="150" height="190"><figcaption></figcaption></figure>
   <header>
     <h3>Anna Arnold Hedgeman</h3>
     <p class="tag" style="color:#e8806a">The bridge builder</p>
@@ -201,6 +208,7 @@ ul.srcs { font-size: 0.82em; font-family: system-ui, Arial, sans-serif; }
 </article>
 
 <article class="card" id="height" style="border-left-color:#8fa8ff">
+  <figure class="portrait" id="portrait-height" hidden><img alt="" width="150" height="190"><figcaption></figcaption></figure>
   <header>
     <h3>Dorothy Height</h3>
     <p class="tag" style="color:#8fa8ff">Race and gender, never separated</p>
@@ -219,6 +227,7 @@ ul.srcs { font-size: 0.82em; font-family: system-ui, Arial, sans-serif; }
 </article>
 
 <article class="card" id="hall" style="border-left-color:#8fcf7a">
+  <figure class="portrait" id="portrait-hall" hidden><img alt="" width="150" height="190"><figcaption></figcaption></figure>
   <header>
     <h3>Prathia Hall</h3>
     <p class="tag" style="color:#8fcf7a">Freedom faith</p>
@@ -237,6 +246,7 @@ ul.srcs { font-size: 0.82em; font-family: system-ui, Arial, sans-serif; }
 </article>
 
 <article class="card" id="blackwell" style="border-left-color:#e08fc0">
+  <figure class="portrait" id="portrait-blackwell" hidden><img alt="" width="150" height="190"><figcaption></figcaption></figure>
   <header>
     <h3>Unita Blackwell</h3>
     <p class="tag" style="color:#e08fc0">From the cotton fields to the mayor's office</p>
@@ -396,7 +406,7 @@ ul.srcs { font-size: 0.82em; font-family: system-ui, Arial, sans-serif; }
 
 <section id="sources">
   <h2>Sources</h2>
-  <ul class="srcs"><li>Jemar Tisby, The Spirit of Justice, Chapter 8, "Women of the Movement" (base text for all profiles; screenshots supplied by Wes Fryer)</li><li><a href="https://www.wbur.org/hereandnow/2026/10/07/freedoms-daughters-book" target="_blank" rel="noopener">Celeste Headlee, Freedom's Daughters, WBUR Here &amp; Now page</a></li><li><a href="https://www.ctpublic.org/2026-10-07/freedoms-daughters-journalist-celeste-headlee-profiles-her-great-grandmother-and-others" target="_blank" rel="noopener">Connecticut Public repost of the Here &amp; Now segment</a></li><li><a href="https://www.netgalley.com/catalog/book/793635" target="_blank" rel="noopener">NetGalley description of Freedom's Daughters</a></li><li><a href="https://kinginstitute.stanford.edu/king-coretta-scott" target="_blank" rel="noopener">King Institute, Stanford: Coretta Scott King</a></li><li><a href="https://kinginstitute.stanford.edu/king-national-holiday" target="_blank" rel="noopener">King Institute, Stanford: King national holiday</a></li><li><a href="https://www.britannica.com/biography/Ruby-Dee" target="_blank" rel="noopener">Encyclopaedia Britannica: Ruby Dee</a></li><li><a href="https://blackpast.org/aah/hedgeman-anna-arnold-1899-1990" target="_blank" rel="noopener">BlackPast: Anna Arnold Hedgeman</a></li><li><a href="https://www.womenshistory.org/education-resources/biographies/anna-arnold-hedgeman" target="_blank" rel="noopener">National Women's History Museum: Anna Arnold Hedgeman</a></li><li><a href="https://www.nps.gov/people/dorothy-i-height.htm" target="_blank" rel="noopener">National Park Service: Dorothy I. Height</a></li><li><a href="https://www.britannica.com/biography/Dorothy-Height" target="_blank" rel="noopener">Encyclopaedia Britannica: Dorothy Height</a></li><li><a href="https://snccdigital.org/people/prathia-hall/" target="_blank" rel="noopener">SNCC Digital Gateway: Prathia Hall</a></li><li><a href="https://www.pbs.org/thisfarbyfaith/people/prathia_hall.html" target="_blank" rel="noopener">PBS, This Far by Faith: Prathia Hall</a></li><li><a href="https://www.ebsco.com/research-starters/womens-studies-and-feminism/prathia-hall" target="_blank" rel="noopener">EBSCO Research Starters: Prathia Hall</a></li><li><a href="https://mswritersandmusicians.com/mississippi-writers/unita-blackwell" target="_blank" rel="noopener">Mississippi Writers and Musicians: Unita Blackwell</a></li><li><a href="https://www.mayersville.ms.gov/node/36" target="_blank" rel="noopener">Town of Mayersville: Unita Blackwell</a></li><li><a href="https://ed.ted.com/lessons/the-hidden-life-of-rosa-parks-riche-d-richardson" target="_blank" rel="noopener">TED-Ed: The hidden life of Rosa Parks</a></li></ul>
+  <ul class="srcs"><li><a href="https://jemartisby.com/the-spirit-of-justice/" target="_blank" rel="noopener">Jemar Tisby, The Spirit of Justice, Chapter 8, "Women of the Movement" (base text for all profiles; screenshots supplied by Wes Fryer)</a></li><li><a href="https://www.wbur.org/hereandnow/2026/10/07/freedoms-daughters-book" target="_blank" rel="noopener">Celeste Headlee, Freedom's Daughters, WBUR Here &amp; Now page</a></li><li><a href="https://www.ctpublic.org/2026-10-07/freedoms-daughters-journalist-celeste-headlee-profiles-her-great-grandmother-and-others" target="_blank" rel="noopener">Connecticut Public repost of the Here &amp; Now segment</a></li><li><a href="https://www.netgalley.com/catalog/book/793635" target="_blank" rel="noopener">NetGalley description of Freedom's Daughters</a></li><li><a href="https://kinginstitute.stanford.edu/king-coretta-scott" target="_blank" rel="noopener">King Institute, Stanford: Coretta Scott King</a></li><li><a href="https://kinginstitute.stanford.edu/king-national-holiday" target="_blank" rel="noopener">King Institute, Stanford: King national holiday</a></li><li><a href="https://www.britannica.com/biography/Ruby-Dee" target="_blank" rel="noopener">Encyclopaedia Britannica: Ruby Dee</a></li><li><a href="https://blackpast.org/aah/hedgeman-anna-arnold-1899-1990" target="_blank" rel="noopener">BlackPast: Anna Arnold Hedgeman</a></li><li><a href="https://www.womenshistory.org/education-resources/biographies/anna-arnold-hedgeman" target="_blank" rel="noopener">National Women's History Museum: Anna Arnold Hedgeman</a></li><li><a href="https://www.nps.gov/people/dorothy-i-height.htm" target="_blank" rel="noopener">National Park Service: Dorothy I. Height</a></li><li><a href="https://www.britannica.com/biography/Dorothy-Height" target="_blank" rel="noopener">Encyclopaedia Britannica: Dorothy Height</a></li><li><a href="https://snccdigital.org/people/prathia-hall/" target="_blank" rel="noopener">SNCC Digital Gateway: Prathia Hall</a></li><li><a href="https://www.pbs.org/thisfarbyfaith/people/prathia_hall.html" target="_blank" rel="noopener">PBS, This Far by Faith: Prathia Hall</a></li><li><a href="https://www.ebsco.com/research-starters/womens-studies-and-feminism/prathia-hall" target="_blank" rel="noopener">EBSCO Research Starters: Prathia Hall</a></li><li><a href="https://mswritersandmusicians.com/mississippi-writers/unita-blackwell" target="_blank" rel="noopener">Mississippi Writers and Musicians: Unita Blackwell</a></li><li><a href="https://www.mayersville.ms.gov/node/36" target="_blank" rel="noopener">Town of Mayersville: Unita Blackwell</a></li><li><a href="https://ed.ted.com/lessons/the-hidden-life-of-rosa-parks-riche-d-richardson" target="_blank" rel="noopener">TED-Ed: The hidden life of Rosa Parks</a></li></ul>
 </section>
 
 </main>
@@ -405,6 +415,22 @@ ul.srcs { font-size: 0.82em; font-family: system-ui, Arial, sans-serif; }
   <p>Prepared by Wes Fryer with help from Claude, an AI assistant. Tisby's chapter is the base text. Dates and places were checked against the sources listed above; please verify anything you plan to quote. The book's quotations are limited to short phrases, and all other wording is a paraphrase.</p>
 </footer>
 </div>
+<!--
+  PORTRAITS: to add a photo, paste its image address between the quotes after src (a link ending in
+  .jpg or .png, or a file name if you save the image in the same folder as this page). Add the credit
+  line the source requires, and edit the alt text so it describes the photo you chose.
+  Leave src empty and that woman's photo spot stays hidden.
+-->
+<script id="portraits">
+var PORTRAITS = {
+  coretta: {src: "https://upload.wikimedia.org/wikipedia/commons/7/74/Coretta_Scott_King_1964.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original", alt: "Portrait photograph of Coretta Scott King.", credit: ""},
+  dee: {src: "https://upload.wikimedia.org/wikipedia/commons/8/80/Ruby_Dee_-_1972.jpg", alt: "Portrait photograph of Ruby Dee.", credit: ""},
+  hedgeman: {src: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Anna_Arnold_Hedgeman.png", alt: "Portrait photograph of Anna Arnold Hedgeman.", credit: ""},
+  height: {src: "https://upload.wikimedia.org/wikipedia/commons/b/ba/DrDorothyHeight.jpg", alt: "Portrait photograph of Dorothy Height.", credit: ""},
+  hall: {src: "https://ptsem.edu/wp-content/uploads/2025/04/prathia-hall-lecture.jpg", alt: "Portrait photograph of Prathia Hall.", credit: ""},
+  blackwell: {src: "https://upload.wikimedia.org/wikipedia/commons/3/34/Unita_Blackwell.jpg", alt: "Portrait photograph of Unita Blackwell.", credit: ""}
+};
+</script>
 <script>
 (function () {
   var buttons = Array.prototype.slice.call(document.querySelectorAll('.fbtn'));
@@ -420,6 +446,21 @@ ul.srcs { font-size: 0.82em; font-family: system-ui, Arial, sans-serif; }
   }
   buttons.forEach(function (b) {
     b.addEventListener('click', function () { apply(b.getAttribute('data-filter')); });
+  });
+})();
+
+(function () {
+  if (typeof PORTRAITS === 'undefined') return;
+  Object.keys(PORTRAITS).forEach(function (id) {
+    var p = PORTRAITS[id];
+    var fig = document.getElementById('portrait-' + id);
+    if (!p || !p.src || !fig) return;
+    var img = fig.querySelector('img');
+    img.onload = function () { fig.hidden = false; };
+    img.onerror = function () { fig.hidden = true; };
+    img.alt = p.alt || '';
+    img.src = p.src;
+    fig.querySelector('figcaption').textContent = p.credit || '';
   });
 })();
 </script>
