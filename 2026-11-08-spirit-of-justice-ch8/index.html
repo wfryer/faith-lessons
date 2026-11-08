@@ -37,6 +37,8 @@ li { margin: 8px 0; }
 .big div { background: #172a4d; border-radius: 10px; padding: 14px 18px; }
 .big strong { color: #e0b34a; }
 .card { background: #172a4d; border-left: 8px solid #e0b34a; border-radius: 10px; padding: 22px 26px 18px; margin: 26px 0; }
+.embed { position: relative; width: 100%; max-width: 860px; aspect-ratio: 16 / 9; margin: 16px 0 24px; background: #0a1428; border: 2px solid #2c4470; border-radius: 10px; overflow: hidden; }
+.embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .portrait { float: right; width: 150px; margin: 0 0 12px 22px; }
 .portrait img { display: block; width: 150px; height: 190px; object-fit: cover; object-position: center top; border-radius: 8px; border: 2px solid #2c4470; background: #0f1b33; }
 .portrait figcaption { font-family: system-ui, Arial, sans-serif; font-size: 0.72rem; color: #c9d2e6; margin-top: 4px; line-height: 1.3; }
@@ -109,6 +111,7 @@ ul.srcs { font-size: 0.82em; font-family: system-ui, Arial, sans-serif; }
 <a class="skip" href="#main">Skip to content</a>
 <nav class="top" aria-label="Lesson sections">
   <a href="../">All lessons</a>
+  <a href="#slides">Slides</a>
   <a href="#overview">Overview</a>
   <a href="#women">The six women</a>
   <a href="#timeline">Timeline</a>
@@ -127,6 +130,14 @@ ul.srcs { font-size: 0.82em; font-family: system-ui, Arial, sans-serif; }
 </header>
 
 <main id="main">
+
+<section id="slides">
+  <h2>Class slides</h2>
+  <p>The slideshow for our class on 8 November 2026. <a href="https://docs.google.com/presentation/d/1CSn8-QPO6US5LQ70mSN66q464erHrDqrXgO7CnFGThM/edit?usp=sharing" target="_blank" rel="noopener">Open the slides in Google Slides</a></p>
+  <div class="embed embed-slides">
+    <iframe title="Women of the Movement class slides (Google Slides)" src="https://docs.google.com/presentation/d/e/2PACX-1vT4jnOlgclOi_twlE3E2_GHQVfhPG4ET54MraG2Obb7dWN8pbnhiRqGljVQZOul6M2d6ghWTh9dh4E5/pubembed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" loading="lazy" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+  </div>
+</section>
 
 <section id="overview">
   <h2>Overview</h2>
@@ -347,6 +358,10 @@ ul.srcs { font-size: 0.82em; font-family: system-ui, Arial, sans-serif; }
 
 <section id="videos">
   <h2>Videos</h2>
+  <p>The videos below, and more, are on my <strong>Black History</strong> playlist on YouTube. <a href="https://www.youtube.com/playlist?list=PLcCkQ9mj_ok_A5X25FuW0TjBi1eg2P10s" target="_blank" rel="noopener">Open the Black History playlist</a></p>
+  <div class="embed embed-video">
+    <iframe title="Black History playlist on YouTube" src="https://www.youtube.com/embed/videoseries?si=LIOkuQWjQ-EYT0it&amp;list=PLcCkQ9mj_ok_A5X25FuW0TjBi1eg2P10s" frameborder="0" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
   <h3>TED-Ed: background on the movement</h3>
   <div class="vid"><h4>The hidden life of Rosa Parks (TED-Ed animation)</h4><p class="by">Riché D. Richardson, TED-Ed</p><p>Rosa Parks is not profiled in Chapter 8, but her story gives context for the Montgomery bus boycott, the December 1955 protest that pulled Coretta Scott King and Martin Luther King Jr. into the movement's front ranks.</p><p class="learn"><a href="https://ed.ted.com/lessons/the-hidden-life-of-rosa-parks-riche-d-richardson" target="_blank" rel="noopener">TED-Ed lesson page</a></p></div>
   <h3>YouTube clips on the six women</h3>
@@ -423,12 +438,12 @@ ul.srcs { font-size: 0.82em; font-family: system-ui, Arial, sans-serif; }
 -->
 <script id="portraits">
 var PORTRAITS = {
-  coretta: {src: "https://upload.wikimedia.org/wikipedia/commons/7/74/Coretta_Scott_King_1964.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original", alt: "Portrait photograph of Coretta Scott King.", credit: ""},
-  dee: {src: "https://upload.wikimedia.org/wikipedia/commons/8/80/Ruby_Dee_-_1972.jpg", alt: "Portrait photograph of Ruby Dee.", credit: ""},
-  hedgeman: {src: "https://upload.wikimedia.org/wikipedia/commons/d/d4/Anna_Arnold_Hedgeman.png", alt: "Portrait photograph of Anna Arnold Hedgeman.", credit: ""},
-  height: {src: "https://upload.wikimedia.org/wikipedia/commons/b/ba/DrDorothyHeight.jpg", alt: "Portrait photograph of Dorothy Height.", credit: ""},
-  hall: {src: "https://ptsem.edu/wp-content/uploads/2025/04/prathia-hall-lecture.jpg", alt: "Portrait photograph of Prathia Hall.", credit: ""},
-  blackwell: {src: "https://upload.wikimedia.org/wikipedia/commons/3/34/Unita_Blackwell.jpg", alt: "Portrait photograph of Unita Blackwell.", credit: ""}
+  coretta: {src: "", alt: "Portrait photograph of Coretta Scott King.", credit: ""},
+  dee: {src: "", alt: "Portrait photograph of Ruby Dee.", credit: ""},
+  hedgeman: {src: "", alt: "Portrait photograph of Anna Arnold Hedgeman.", credit: ""},
+  height: {src: "", alt: "Portrait photograph of Dorothy Height.", credit: ""},
+  hall: {src: "", alt: "Portrait photograph of Prathia Hall.", credit: ""},
+  blackwell: {src: "", alt: "Portrait photograph of Unita Blackwell.", credit: ""}
 };
 </script>
 <script>
