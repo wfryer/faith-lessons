@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Women of the Movement: Chapter 8 of The Spirit of Justice</title>
+<meta name="description" content="Lesson website for Chapter 8 of Jemar Tisby's The Spirit of Justice: profiles, timeline, videos, and discussion questions for ACE Sunday School.">
+<style>
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+body { margin: 0; background: #0f1b33; color: #f6f1e4; font-family: Georgia, "Times New Roman", serif; font-size: 21px; line-height: 1.6; }
+a { color: #ffd36b; text-underline-offset: 3px; }
+a:hover { color: #fff; }
+:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+.skip { position: absolute; left: -999px; top: 0; background: #e0b34a; color: #0f1b33; padding: 10px 16px; z-index: 20; }
+.skip:focus { left: 8px; top: 8px; }
+nav.top { position: sticky; top: 0; z-index: 10; background: #0a1428; border-bottom: 2px solid #e0b34a; padding: 8px 16px; display: flex; flex-wrap: wrap; gap: 6px 18px; font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif; font-size: 18px; }
+nav.top a { text-decoration: none; padding: 6px 4px; font-weight: 600; }
+nav.top a:hover { text-decoration: underline; }
+.wrap { max-width: 1040px; margin: 0 auto; padding: 0 22px; }
+header.hero { padding: 44px 0 26px; border-bottom: 1px solid #2c4470; }
+header.hero .kicker { font-family: system-ui, Arial, sans-serif; text-transform: uppercase; letter-spacing: 0.12em; color: #e0b34a; font-size: 17px; margin: 0 0 6px; }
+header.hero h1 { font-size: 2.5rem; line-height: 1.15; margin: 0 0 10px; color: #fff; }
+header.hero p { margin: 6px 0; color: #c9d2e6; }
+section { padding: 38px 0 12px; }
+h2 { font-size: 1.85rem; color: #e0b34a; margin: 0 0 14px; line-height: 1.2; border-bottom: 1px solid #2c4470; padding-bottom: 8px; }
+h3 { font-size: 1.55rem; margin: 0; color: #fff; line-height: 1.2; }
+h4 { font-family: system-ui, Arial, sans-serif; font-size: 0.82rem; text-transform: uppercase; letter-spacing: 0.1em; color: #e0b34a; margin: 20px 0 6px; }
+p { margin: 10px 0; }
+ul, ol { padding-left: 1.3em; }
+li { margin: 8px 0; }
+.verse { background: #172a4d; border: 2px solid #e0b34a; border-radius: 10px; padding: 18px 24px; margin: 20px 0; }
+.verse .ref { font-family: system-ui, Arial, sans-serif; color: #e0b34a; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; font-size: 0.8rem; margin: 0; }
+.verse p { margin: 6px 0 0; font-size: 1.15em; }
+.note { background: #20365f; border: 1px dashed #e0b34a; border-radius: 8px; padding: 12px 18px; margin: 18px 0; font-size: 0.92em; }
+.big { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; margin: 18px 0; }
+.big div { background: #172a4d; border-radius: 10px; padding: 14px 18px; }
+.big strong { color: #e0b34a; }
+.card { background: #172a4d; border-left: 8px solid #e0b34a; border-radius: 10px; padding: 22px 26px 18px; margin: 26px 0; }
+.card header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 18px; }
+.card .tag { font-style: italic; margin: 0; font-size: 1.05em; }
+dl.facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; margin: 14px 0 4px; }
+dl.facts div { background: #0f1b33; border-radius: 8px; padding: 10px 14px; }
+dl.facts dt { font-family: system-ui, Arial, sans-serif; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em; color: #e0b34a; }
+dl.facts dd { margin: 2px 0 0; }
+.verify { font-size: 0.86em; color: #c9d2e6; border-top: 1px solid #2c4470; padding-top: 10px; margin-top: 16px; }
+.learn { font-size: 0.86em; font-family: system-ui, Arial, sans-serif; }
+.chart { background: #172a4d; border-radius: 10px; padding: 16px 20px 22px; margin: 18px 0; overflow-x: auto; }
+.chart .axis { position: relative; height: 28px; min-width: 640px; font-family: system-ui, Arial, sans-serif; font-size: 15px; color: #c9d2e6; margin-left: 170px; }
+.chart .tick { position: absolute; transform: translateX(-50%); }
+.chart .rows { position: relative; min-width: 810px; }
+.row { display: flex; align-items: center; margin: 8px 0; }
+.rowname { width: 170px; flex: none; font-family: system-ui, Arial, sans-serif; font-size: 17px; font-weight: 600; padding-right: 10px; }
+.track { position: relative; flex: 1; height: 38px; background: #0f1b33; border-radius: 6px; }
+.bar { position: absolute; top: 0; bottom: 0; border-radius: 6px; color: #0f1b33; font-family: system-ui, Arial, sans-serif; font-size: 15px; font-weight: 700; display: flex; align-items: center; padding-left: 10px; white-space: nowrap; overflow: hidden; }
+.marker { position: absolute; top: 0; bottom: 0; width: 0; border-left: 2px dashed #fff; z-index: 2; pointer-events: none; }
+.marker span { position: absolute; top: 2px; transform: translateX(-100%); padding-right: 6px; font-family: system-ui, Arial, sans-serif; font-size: 14px; white-space: nowrap; color: #fff; }
+.marker2 span { transform: none; padding-left: 6px; padding-right: 0; }
+.rows { padding-top: 28px; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin: 18px 0 8px; }
+.fbtn { font: 600 17px system-ui, Arial, sans-serif; background: #0f1b33; color: #f6f1e4; border: 2px solid #4a6296; border-radius: 999px; padding: 9px 16px; min-height: 44px; cursor: pointer; }
+.fbtn[aria-pressed="true"] { background: #e0b34a; color: #0f1b33; border-color: #e0b34a; }
+ol.events { list-style: none; padding: 0; margin: 14px 0; }
+.event { display: grid; grid-template-columns: 90px 1fr; gap: 14px; padding: 12px 0; border-top: 1px solid #2c4470; }
+.event[hidden] { display: none; }
+.year { font-size: 1.6rem; font-weight: 700; color: #e0b34a; line-height: 1.2; }
+.event p { margin: 6px 0 0; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { display: inline-block; border: 1.5px solid; border-radius: 999px; padding: 1px 10px; font: 600 14px system-ui, Arial, sans-serif; white-space: nowrap; }
+.vid { background: #172a4d; border-radius: 10px; padding: 12px 22px 8px; margin: 16px 0; }
+.vid h4 { font-family: Georgia, serif; font-size: 1.15rem; text-transform: none; letter-spacing: 0; color: #fff; margin: 8px 0 0; }
+.by { color: #c9d2e6; font-size: 0.9em; margin: 2px 0; }
+ul.clips { list-style: none; padding: 0; }
+ul.clips li { background: #172a4d; border-radius: 10px; padding: 12px 18px; }
+.desc { color: #c9d2e6; font-size: 0.9em; }
+.pod { background: #172a4d; border: 2px solid #e0b34a; border-radius: 12px; padding: 20px 26px; margin: 18px 0; }
+.pod h3 { margin-bottom: 4px; }
+.btn { display: inline-block; background: #e0b34a; color: #0f1b33; font: 700 19px system-ui, Arial, sans-serif; padding: 12px 22px; border-radius: 8px; text-decoration: none; margin: 8px 0; }
+.btn:hover { background: #fff; color: #0f1b33; }
+ol.q { list-style: none; counter-reset: q; padding: 0; }
+ol.q li { counter-increment: q; background: #172a4d; border-radius: 10px; padding: 14px 20px 8px 66px; position: relative; margin: 14px 0; }
+ol.q li::before { content: counter(q); position: absolute; left: 18px; top: 12px; width: 36px; height: 36px; border-radius: 50%; background: #e0b34a; color: #0f1b33; font: 700 20px system-ui, Arial, sans-serif; display: flex; align-items: center; justify-content: center; }
+.qtype { font: 700 14px system-ui, Arial, sans-serif; text-transform: uppercase; letter-spacing: 0.1em; color: #e0b34a; }
+ol.q p { margin: 4px 0 8px; }
+table { width: 100%; border-collapse: collapse; font-size: 0.88em; margin: 14px 0; }
+th, td { border: 1px solid #2c4470; padding: 10px 12px; text-align: left; vertical-align: top; }
+thead th { background: #20365f; font-family: system-ui, Arial, sans-serif; }
+td.rating { font-weight: 700; color: #e0b34a; white-space: nowrap; }
+ol.flow { padding-left: 1.2em; }
+footer { margin-top: 40px; padding: 24px 0 60px; border-top: 1px solid #2c4470; color: #c9d2e6; font-size: 0.85em; }
+ul.srcs { font-size: 0.82em; font-family: system-ui, Arial, sans-serif; }
+@media (max-width: 640px) {
+  body { font-size: 19px; }
+  header.hero h1 { font-size: 1.9rem; }
+  .event { grid-template-columns: 1fr; gap: 0; }
+  table, thead, tbody, tr, th, td { display: block; }
+  thead { display: none; }
+  tr { margin-bottom: 14px; border: 1px solid #2c4470; border-radius: 8px; }
+  td, th { border: 0; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<nav class="top" aria-label="Lesson sections">
+  <a href="../">All lessons</a>
+  <a href="#overview">Overview</a>
+  <a href="#women">The six women</a>
+  <a href="#timeline">Timeline</a>
+  <a href="#videos">Videos</a>
+  <a href="#podcast">Podcast</a>
+  <a href="#discuss">Discussion</a>
+  <a href="#factcheck">Fact check</a>
+  <a href="#sources">Sources</a>
+</nav>
+<div class="wrap">
+<header class="hero">
+  <p class="kicker">ACE Sunday School Class &nbsp;|&nbsp; 8 November 2026</p>
+  <h1>Women of the Movement</h1>
+  <p>Chapter 8 of <em>The Spirit of Justice</em> by Jemar Tisby</p>
+  <p>Facilitated by Wes Fryer &nbsp;|&nbsp; <a href="https://followjesus.wesfryer.com" target="_blank" rel="noopener">followjesus.wesfryer.com</a></p>
+</header>
+
+<main id="main">
+
+<section id="overview">
+  <h2>Overview</h2>
+  <div class="verse">
+    <p class="ref">Centering verse: Luke 4:18</p>
+    <p>Tisby cites this verse in the Prathia Hall section, where he describes freedom faith as God's work through the community of faith "to set the oppressed free."</p>
+    <p class="learn"><strong>Read Luke 4:18 in:</strong> <a href="https://www.biblegateway.com/passage/?search=Luke+4%3A18&amp;version=NRSVUE" target="_blank" rel="noopener">NRSVUE</a> &nbsp;|&nbsp; <a href="https://www.biblegateway.com/passage/?search=Luke+4%3A18&amp;version=MSG" target="_blank" rel="noopener">The Message</a></p>
+  </div>
+  <p>Tisby opens with Ella Baker, who knew she would never lead from the pulpit or the podium because she was a woman, and then profiles six women whose faith put them in the movement's front ranks. The big ideas of the chapter:</p>
+  <div class="big">
+    <div><strong>Women were the backbone.</strong> Women made up the majority of participants and did much of the organizing, yet popular history centers men. Tisby draws on Danielle McGuire and Martha S. Jones to argue the story needs to be retold.</div>
+    <div><strong>A double handicap.</strong> Black women faced racism in the nation and sexism inside the movement. Mary Church Terrell named it a double handicap, and Pauli Murray called it "Jane Crow."</div>
+    <div><strong>A here and now faith.</strong> These women rejected a "by and by" faith that only waits for heaven. Their faith showed up in registration lines, church basements and picket lines.</div>
+    <div><strong>Institution builders.</strong> They worked through church, the YWCA, the NCNW, SNCC, the Commission on Religion and Race, and even a town hall.</div>
+  </div>
+  <h4>Suggested flow</h4>
+  <ol class="flow"><li><strong>5 min</strong> Welcome and centering verse (Luke 4:18).</li><li><strong>17 min</strong> Play the Here &amp; Now interview (11:56) and take quick reactions.</li><li><strong>15 min</strong> Tour the six women. Give each table or pair one woman and two minutes to report the takeaways.</li><li><strong>5 min</strong> Look at the timeline: where do these lives overlap, and who was alive for the March on Washington?</li><li><strong>15 min</strong> Discussion questions, starting with the first two and moving to our congregation.</li><li><strong>3 min</strong> Closing: return to Luke 4:18.</li></ol>
+  <p class="note">This is a draft for about 60 minutes. Adjust it to your actual time.</p>
+</section>
+
+<section id="women">
+  <h2>The six women</h2>
+  <p>In the order Tisby presents them. Dates and places were checked against the sources linked in each card, and any disagreement with the chapter or among sources is noted under "Source check."</p>
+  
+<article class="card" id="coretta" style="border-left-color:#e0b34a">
+  <header>
+    <h3>Coretta Scott King</h3>
+    <p class="tag" style="color:#e0b34a">Her own person, before and after Martin</p>
+  </header>
+  <dl class="facts">
+    <div><dt>Born</dt><dd>April 27, 1927<br>Heiberger, Alabama</dd></div>
+    <div><dt>Died</dt><dd>January 30, 2006<br>Rosarito, Baja California, Mexico</dd></div>
+    <div><dt>Lived</dt><dd>78 years</dd></div>
+  </dl>
+  <h4>Key takeaways</h4>
+  <ul><li>Tisby insists she be remembered as an independent person, not only as a spouse and widow. She formed her own convictions long before she met Martin Luther King Jr.</li><li>Her faith was tested early: white neighbors burned her family's home when she was fifteen, and after the January 1956 bombing of the King home in Montgomery she chose to stay.</li><li>After 1968 she built institutions. She founded the King Center, pushed for the King holiday, and spoke out on apartheid, women's rights, disarmament and LGBTQ rights.</li></ul>
+  <h4>Contribution in brief</h4>
+  <p>Born on a Black-owned farm in rural Alabama, Coretta Scott graduated as valedictorian of Lincoln Normal School, earned a scholarship to Antioch College, and trained as a concert singer at the New England Conservatory in Boston, where she met Martin Luther King Jr. They married on June 18, 1953. She set aside a concert career, but never lost her love of music or her vision of the "Beloved Community," which shaped a lifetime of work for nonviolence.</p>
+  <p class="verify"><strong>Source check:</strong> Some sources list Marion, Alabama, as her birthplace. Heiberger is the farm community near Marion where her family lived.</p>
+  <p class="learn"><strong>Learn more:</strong> <a href="https://kinginstitute.stanford.edu/king-coretta-scott" target="_blank" rel="noopener">King Institute, Stanford</a> &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Coretta_Scott_King" target="_blank" rel="noopener">Wikipedia (photos and portraits)</a></p>
+</article>
+
+<article class="card" id="dee" style="border-left-color:#4fb3a9">
+  <header>
+    <h3>Ruby Dee</h3>
+    <p class="tag" style="color:#4fb3a9">Art as activism</p>
+  </header>
+  <dl class="facts">
+    <div><dt>Born</dt><dd>October 27, 1922<br>Cleveland, Ohio (raised in Harlem, New York)</dd></div>
+    <div><dt>Died</dt><dd>June 11, 2014<br>New Rochelle, New York</dd></div>
+    <div><dt>Lived</dt><dd>91 years</dd></div>
+  </dl>
+  <h4>Key takeaways</h4>
+  <ul><li>A painfully shy girl from Harlem who found her voice on stage, she treated her art and her activism as one calling. Tisby says each strengthened the other.</li><li>Faith shaped her conscience early. She credited her stepmother for steady attendance at Mother Zion AME Church and believed God had put her on earth for a purpose.</li><li>She and Ossie Davis, her husband from 1948 until his death in 2005, were friends of both Martin Luther King Jr. and Malcolm X. She spoke at the 1957 Prayer Pilgrimage, and the couple served as masters of ceremonies at the 1963 March on Washington.</li></ul>
+  <h4>Contribution in brief</h4>
+  <p>Born Ruby Ann Wallace, she joined the American Negro Theater, one of the few places where Black actors could explore race and the complexity of life as people of African descent in the United States. Her work includes A Raisin in the Sun, The Jackie Robinson Story, Do the Right Thing, and American Gangster, which brought an Oscar nomination. Coretta Scott King invited her to the advisory board of the King Center's Cultural Affairs department. Tisby notes that she prayed to be made so uncomfortable that she would do the very thing she feared.</p>
+  <p class="verify"><strong>Source check:</strong> Tisby says only "born in 1922 in Ohio." Britannica and other sources give Cleveland and October 27, 1922.</p>
+  <p class="learn"><strong>Learn more:</strong> <a href="https://www.britannica.com/biography/Ruby-Dee" target="_blank" rel="noopener">Encyclopaedia Britannica</a> &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Ruby_Dee" target="_blank" rel="noopener">Wikipedia (photos and portraits)</a></p>
+</article>
+
+<article class="card" id="hedgeman" style="border-left-color:#e8806a">
+  <header>
+    <h3>Anna Arnold Hedgeman</h3>
+    <p class="tag" style="color:#e8806a">The bridge builder</p>
+  </header>
+  <dl class="facts">
+    <div><dt>Born</dt><dd>July 5, 1899<br>Marshalltown, Iowa (raised in Anoka, Minnesota)</dd></div>
+    <div><dt>Died</dt><dd>January 17, 1990<br>New York City (Harlem)</dd></div>
+    <div><dt>Lived</dt><dd>90 years</dd></div>
+  </dl>
+  <h4>Key takeaways</h4>
+  <ul><li>She was the only woman on the March on Washington's administrative committee. She pressed, largely without success, for women to have a larger role on the program.</li><li>On the staff of the National Council of Churches' Commission on Religion and Race, she brought white Protestants into the movement. Tisby credits her with recruiting more than 40,000 to attend the March.</li><li>After the September 1963 Birmingham church bombing, her faith would not let her harbor bitterness toward anyone made in God's image, even white supremacists. She organized religious leaders to support the Civil Rights Act.</li></ul>
+  <h4>Contribution in brief</h4>
+  <p>Raised in the only Black family in Anoka, Minnesota, she became the first Black graduate of Hamline University in 1922. She taught at Rust College in Mississippi, led YWCA branches, and in 1963 joined the Commission on Religion and Race. Tisby calls her a bridge builder: she helped arrange the meeting where A. Philip Randolph and Martin Luther King Jr. coordinated their separate march plans. Her coalitions backed the Civil Rights Act of 1964, including the provision adding sex to its nondiscrimination clause, and she was invited to the White House signing.</p>
+  <p class="verify"><strong>Source check:</strong> Tisby says she grew up in Anoka; she was born in Marshalltown, Iowa. One National Park Service page misprints her birth year as 1889. Every other source gives 1899. The 40,000 figure is Tisby's, and I did not find it confirmed independently.</p>
+  <p class="learn"><strong>Learn more:</strong> <a href="https://www.womenshistory.org/education-resources/biographies/anna-arnold-hedgeman" target="_blank" rel="noopener">National Women's History Museum</a> &nbsp;|&nbsp; <a href="https://www.mnhs.org/mnopedia/search/index/person/hedgeman-anna-arnold-1899-1990" target="_blank" rel="noopener">MNopedia, Minnesota Historical Society</a> &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Anna_Arnold_Hedgeman" target="_blank" rel="noopener">Wikipedia (photos and portraits)</a></p>
+</article>
+
+<article class="card" id="height" style="border-left-color:#8fa8ff">
+  <header>
+    <h3>Dorothy Height</h3>
+    <p class="tag" style="color:#8fa8ff">Race and gender, never separated</p>
+  </header>
+  <dl class="facts">
+    <div><dt>Born</dt><dd>March 24, 1912<br>Richmond, Virginia (raised in Rankin, Pennsylvania)</dd></div>
+    <div><dt>Died</dt><dd>April 20, 2010<br>Washington, D.C.</dd></div>
+    <div><dt>Lived</dt><dd>98 years</dd></div>
+  </dl>
+  <h4>Key takeaways</h4>
+  <ul><li>She led the National Council of Negro Women for about forty years, beginning in 1957. Her habits of faith and service began in a church-centered family that often spent entire Sundays at church.</li><li>A chief organizer of the 1963 March on Washington, she sat on the platform but was not asked to speak. The women then met to ask "After the March...What?" and insisted that women's concerns stay at the center.</li><li>She treated racial and gender justice as one struggle. She cofounded Wednesdays in Mississippi, which brought Black and white women from the North and South together.</li></ul>
+  <h4>Contribution in brief</h4>
+  <p>As a teenager she won a national speaking contest, and she was admitted to Barnard College, but the dean turned her away because the school had already filled its quota of Black students. She earned a bachelor's and a master's degree at New York University. Working for the YWCA from 1937, she met Mary McLeod Bethune and Eleanor Roosevelt, helped the YWCA adopt its Interracial Charter, and became the first director of its Office of Racial Justice. The NCNW also supported Fannie Lou Hamer's pig bank. Her honors include the Presidential Medal of Freedom (1994) and the Congressional Gold Medal (2004).</p>
+  <p class="verify"><strong>Source check:</strong> Dates are consistent across sources. A National Park Service page lists a death date of March 25, 2010, which is the day she was admitted to the hospital. She died April 20, 2010. Sources differ slightly on when she left the NCNW presidency (1996 or 1997).</p>
+  <p class="learn"><strong>Learn more:</strong> <a href="https://www.nps.gov/people/dorothy-i-height.htm" target="_blank" rel="noopener">National Park Service</a> &nbsp;|&nbsp; <a href="https://www.britannica.com/biography/Dorothy-Height" target="_blank" rel="noopener">Encyclopaedia Britannica</a> &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Dorothy_Height" target="_blank" rel="noopener">Wikipedia (photos and portraits)</a></p>
+</article>
+
+<article class="card" id="hall" style="border-left-color:#8fcf7a">
+  <header>
+    <h3>Prathia Hall</h3>
+    <p class="tag" style="color:#8fcf7a">Freedom faith</p>
+  </header>
+  <dl class="facts">
+    <div><dt>Born</dt><dd>June 29, 1940 per Tisby (several sources say January 1, 1940)<br>Philadelphia, Pennsylvania</dd></div>
+    <div><dt>Died</dt><dd>August 12, 2002<br>Boston, Massachusetts</dd></div>
+    <div><dt>Lived</dt><dd>62 years</dd></div>
+  </dl>
+  <h4>Key takeaways</h4>
+  <ul><li>Hall defined "freedom faith" as the belief that God intends us to be free and empowers those who work for freedom. For her, faith could not stay inside the sanctuary; it had to be practiced when danger was real.</li><li>As a SNCC field organizer in Terrell County, Georgia, nicknamed "Terrible Terrell," she survived a night when the home where she was staying was shot up by white terrorists.</li><li>Oral history suggests that her 1962 prayer at a vigil for burned Black churches, where she repeated "I have a dream," made an impression on Martin Luther King Jr., who later used the phrase.</li></ul>
+  <h4>Contribution in brief</h4>
+  <p>A preacher's kid from Philadelphia whose father founded Mount Sharon Baptist Church in 1938, she suspended her studies at Temple University in 1962 to work with the Student Nonviolent Coordinating Committee. She was ordained in 1977, one of the first women ordained in the American Baptist Church, pastored Mount Sharon, earned a PhD at Princeton Theological Seminary, and held the Martin Luther King Jr. Chair in Social Ethics at Boston University School of Theology. Tisby calls her a pioneer of womanism, theology rooted in the experiences of Black women. King is quoted as saying she was the one platform speaker he would prefer not to follow.</p>
+  <p class="verify"><strong>Source check:</strong> Birth date is disputed. Tisby and the published biography Freedom Faith give June 29, 1940. Wikipedia, the SNCC Digital Gateway and EBSCO give January 1, 1940. Everyone agrees on 1940. The "I have a dream" link rests on oral history and is hedged by Tisby himself.</p>
+  <p class="learn"><strong>Learn more:</strong> <a href="https://snccdigital.org/people/prathia-hall/" target="_blank" rel="noopener">SNCC Digital Gateway</a> &nbsp;|&nbsp; <a href="https://www.pbs.org/thisfarbyfaith/people/prathia_hall.html" target="_blank" rel="noopener">PBS, This Far by Faith</a> &nbsp;|&nbsp; <a href="https://ptsem.edu/profiles/prathia-hall/" target="_blank" rel="noopener">Princeton Theological Seminary</a></p>
+</article>
+
+<article class="card" id="blackwell" style="border-left-color:#e08fc0">
+  <header>
+    <h3>Unita Blackwell</h3>
+    <p class="tag" style="color:#e08fc0">From the cotton fields to the mayor's office</p>
+  </header>
+  <dl class="facts">
+    <div><dt>Born</dt><dd>March 18, 1933<br>Lula, Mississippi</dd></div>
+    <div><dt>Died</dt><dd>May 13, 2019<br>Ocean Springs, Mississippi</dd></div>
+    <div><dt>Lived</dt><dd>86 years</dd></div>
+  </dl>
+  <h4>Key takeaways</h4>
+  <ul><li>Born U. Z. Brown to sharecropping parents, she left school after eighth grade and worked the fields into her thirties. The church, she said, was the one place that white people did not control.</li><li>One Sunday in 1964 at Moon Lake Missionary Baptist Church, SNCC workers came to teach rural Black Mississippians to register to vote. She stood up, and she later said she has been standing up ever since.</li><li>In 1976 she became the first Black woman elected mayor in Mississippi and served until 2001, bringing paved roads, streetlights, sewers and public housing to Mayersville.</li></ul>
+  <h4>Contribution in brief</h4>
+  <p>Facing white men with guns, literacy tests and the loss of her job, she became a SNCC field organizer and a delegate of the Mississippi Freedom Democratic Party at the 1964 Democratic National Convention, working beside Fannie Lou Hamer. She later served as housing coordinator for the National Council of Negro Women and, in 1973, traveled to China at the invitation of Shirley MacLaine, returning sixteen more times. In 1992 she received a MacArthur Foundation fellowship. Her memoir, Barefootin', was published in 2006.</p>
+  <p class="verify"><strong>Source check:</strong> Birth and death details agree across the Associated Press obituary, the Town of Mayersville and other sources. Her mayoral term of 1976 to 2001 matches Tisby.</p>
+  <p class="learn"><strong>Learn more:</strong> <a href="https://mswritersandmusicians.com/mississippi-writers/unita-blackwell" target="_blank" rel="noopener">Mississippi Writers and Musicians</a> &nbsp;|&nbsp; <a href="https://www.mayersville.ms.gov/node/36" target="_blank" rel="noopener">Town of Mayersville, Mississippi</a> &nbsp;|&nbsp; <a href="https://en.wikipedia.org/wiki/Unita_Blackwell" target="_blank" rel="noopener">Wikipedia (photos and portraits)</a></p>
+</article>
+  <h4>Also named in the chapter</h4>
+  <ul><li><strong>Ella Baker (1903 to 1986)</strong>: Opens the chapter. Her SNCC and SCLC work is the model of women leading from behind the scenes. She knew she could not lead from the pulpit or the podium because she was a woman.</li><li><strong>Mary McLeod Bethune</strong>: Founded the National Council of Negro Women in 1935. Mentor to Dorothy Height.</li><li><strong>Fannie Lou Hamer</strong>: Mississippi Freedom Democratic Party leader and friend of Unita Blackwell. Her Freedom Farm pig bank was supported by the NCNW.</li><li><strong>Mary Church Terrell</strong>: Described the "double handicap of race and sex" that Black women carried.</li><li><strong>Pauli Murray</strong>: An activist and a Christian who named this injustice "Jane Crow."</li></ul>
+  <p class="note"><strong>Photos:</strong> real portraits exist for all six women. Each "Learn more" list includes a page with photos and portraits. Check each image's credit and license before using it on a slide.</p>
+</section>
+
+<section id="timeline">
+  <h2>Timeline</h2>
+  <p>Six lives, 120 years. The dashed lines mark the 1963 March on Washington and the 1964 Civil Rights Act. All six women were alive for both.</p>
+  <div class="chart" role="group" aria-label="Lifespans of the six women, 1899 to 2019">
+<div class="axis" aria-hidden="true">
+<span class="tick" style="left:3.85%">1900</span>
+<span class="tick" style="left:19.23%">1920</span>
+<span class="tick" style="left:34.62%">1940</span>
+<span class="tick" style="left:50.00%">1960</span>
+<span class="tick" style="left:65.38%">1980</span>
+<span class="tick" style="left:80.77%">2000</span>
+<span class="tick" style="left:96.15%">2020</span>
+</div>
+<div class="rows">
+<div class="marker" style="left:calc(170px + (100% - 170px) * 0.5231)" aria-hidden="true"><span>1963 March on Washington</span></div>
+<div class="marker marker2" style="left:calc(170px + (100% - 170px) * 0.5308)" aria-hidden="true"><span>1964 Civil Rights Act</span></div>
+<div class="row"><div class="rowname">Anna Arnold Hedgeman</div><div class="track"><div class="bar" style="left:3.08%;width:70.00%;background:#e8806a"><span>1899 to 1990, age 90</span></div></div></div>
+<div class="row"><div class="rowname">Dorothy Height</div><div class="track"><div class="bar" style="left:13.08%;width:75.38%;background:#8fa8ff"><span>1912 to 2010, age 98</span></div></div></div>
+<div class="row"><div class="rowname">Ruby Dee</div><div class="track"><div class="bar" style="left:20.77%;width:70.77%;background:#4fb3a9"><span>1922 to 2014, age 91</span></div></div></div>
+<div class="row"><div class="rowname">Coretta Scott King</div><div class="track"><div class="bar" style="left:24.62%;width:60.77%;background:#e0b34a"><span>1927 to 2006, age 78</span></div></div></div>
+<div class="row"><div class="rowname">Unita Blackwell</div><div class="track"><div class="bar" style="left:29.23%;width:66.15%;background:#e08fc0"><span>1933 to 2019, age 86</span></div></div></div>
+<div class="row"><div class="rowname">Prathia Hall</div><div class="track"><div class="bar" style="left:34.62%;width:47.69%;background:#8fcf7a"><span>1940 to 2002, age 62</span></div></div></div>
+</div></div>
+  <h3>Events</h3>
+  <p>Use the buttons to follow one woman or the broader movement.</p>
+  <div class="filters" role="group" aria-label="Filter the timeline">
+<button type="button" class="fbtn" data-filter="all" aria-pressed="true">Everyone</button>
+<button type="button" class="fbtn" data-filter="coretta" aria-pressed="false">Coretta Scott King</button>
+<button type="button" class="fbtn" data-filter="dee" aria-pressed="false">Ruby Dee</button>
+<button type="button" class="fbtn" data-filter="hedgeman" aria-pressed="false">Anna Arnold Hedgeman</button>
+<button type="button" class="fbtn" data-filter="height" aria-pressed="false">Dorothy Height</button>
+<button type="button" class="fbtn" data-filter="hall" aria-pressed="false">Prathia Hall</button>
+<button type="button" class="fbtn" data-filter="blackwell" aria-pressed="false">Unita Blackwell</button>
+<button type="button" class="fbtn" data-filter="movement" aria-pressed="false">Movement events</button>
+</div>
+  <ol class="events">
+<li class="event" data-who="hedgeman"><div class="year">1899</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#e8806a;color:#e8806a">Anna Arnold Hedgeman</span></div><p>Anna Arnold Hedgeman is born on July 5 in Marshalltown, Iowa. Her family later moves to Anoka, Minnesota, where they are the only Black family.</p></div></li>
+<li class="event" data-who="height"><div class="year">1912</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#8fa8ff;color:#8fa8ff">Dorothy Height</span></div><p>Dorothy Height is born on March 24 in Richmond, Virginia, and is raised in Rankin, Pennsylvania.</p></div></li>
+<li class="event" data-who="hedgeman"><div class="year">1922</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#e8806a;color:#e8806a">Anna Arnold Hedgeman</span></div><p>Hedgeman graduates from Hamline University in St. Paul, Minnesota, its first Black graduate.</p></div></li>
+<li class="event" data-who="dee"><div class="year">1922</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#4fb3a9;color:#4fb3a9">Ruby Dee</span></div><p>Ruby Dee is born on October 27 in Cleveland, Ohio, and grows up in Harlem.</p></div></li>
+<li class="event" data-who="coretta"><div class="year">1927</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#e0b34a;color:#e0b34a">Coretta Scott King</span></div><p>Coretta Scott is born on April 27 on her family's farm near Heiberger, Alabama.</p></div></li>
+<li class="event" data-who="blackwell"><div class="year">1933</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#e08fc0;color:#e08fc0">Unita Blackwell</span></div><p>Unita Blackwell is born U. Z. Brown on March 18 in Lula, Mississippi, to sharecropping parents.</p></div></li>
+<li class="event" data-who="height movement"><div class="year">1935</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#8fa8ff;color:#8fa8ff">Dorothy Height</span><span class="chip" style="border-color:#c9d2e6;color:#c9d2e6">Movement events</span></div><p>Mary McLeod Bethune founds the National Council of Negro Women (NCNW), which Height will later lead.</p></div></li>
+<li class="event" data-who="height"><div class="year">1937</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#8fa8ff;color:#8fa8ff">Dorothy Height</span></div><p>Height begins work at the Harlem YWCA, where she meets Mary McLeod Bethune and Eleanor Roosevelt.</p></div></li>
+<li class="event" data-who="hall"><div class="year">1940</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#8fcf7a;color:#8fcf7a">Prathia Hall</span></div><p>Prathia Hall is born in Philadelphia, where her father had founded Mount Sharon Baptist Church in 1938. Tisby gives June 29; several sources give January 1.</p></div></li>
+<li class="event" data-who="dee"><div class="year">1948</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#4fb3a9;color:#4fb3a9">Ruby Dee</span></div><p>Ruby Dee marries actor Ossie Davis. They remain married until his death in 2005.</p></div></li>
+<li class="event" data-who="coretta"><div class="year">1953</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#e0b34a;color:#e0b34a">Coretta Scott King</span></div><p>Coretta Scott marries Martin Luther King Jr. on June 18.</p></div></li>
+<li class="event" data-who="coretta movement"><div class="year">1955</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#e0b34a;color:#e0b34a">Coretta Scott King</span><span class="chip" style="border-color:#c9d2e6;color:#c9d2e6">Movement events</span></div><p>The Montgomery bus boycott begins in December, and Martin Luther King Jr. becomes spokesperson for the Montgomery Improvement Association.</p></div></li>
+<li class="event" data-who="coretta"><div class="year">1956</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#e0b34a;color:#e0b34a">Coretta Scott King</span></div><p>On January 30 the King home is bombed while Coretta and their infant daughter Yolanda are inside. Coretta decides to stay in Montgomery.</p></div></li>
+<li class="event" data-who="height"><div class="year">1957</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#8fa8ff;color:#8fa8ff">Dorothy Height</span></div><p>Height is elected the fourth president of the NCNW.</p></div></li>
+<li class="event" data-who="dee movement"><div class="year">1957</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#4fb3a9;color:#4fb3a9">Ruby Dee</span><span class="chip" style="border-color:#c9d2e6;color:#c9d2e6">Movement events</span></div><p>Ruby Dee addresses the crowd at the Prayer Pilgrimage for Freedom in Washington, King's first address to a national crowd of about 25,000.</p></div></li>
+<li class="event" data-who="movement"><div class="year">1960</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#c9d2e6;color:#c9d2e6">Movement events</span></div><p>Students launch sit-ins across the South, and Ella Baker encourages them to form the Student Nonviolent Coordinating Committee (SNCC).</p></div></li>
+<li class="event" data-who="hall"><div class="year">1962</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#8fcf7a;color:#8fcf7a">Prathia Hall</span></div><p>Hall suspends her studies to join SNCC in southwest Georgia. At a vigil for burned Black churches she prays aloud and repeats the phrase "I have a dream."</p></div></li>
+<li class="event" data-who="hedgeman height dee movement"><div class="year">1963</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#e8806a;color:#e8806a">Anna Arnold Hedgeman</span><span class="chip" style="border-color:#8fa8ff;color:#8fa8ff">Dorothy Height</span><span class="chip" style="border-color:#4fb3a9;color:#4fb3a9">Ruby Dee</span><span class="chip" style="border-color:#c9d2e6;color:#c9d2e6">Movement events</span></div><p>August 28, March on Washington for Jobs and Freedom. Hedgeman serves on the administrative committee, and Height is a chief organizer. Height sits on the platform but is not asked to speak. Ruby Dee and Ossie Davis serve as masters of ceremonies. Afterward Height and other women meet to ask "After the March...What?"</p></div></li>
+<li class="event" data-who="hedgeman"><div class="year">1963</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#e8806a;color:#e8806a">Anna Arnold Hedgeman</span></div><p>In September, after four girls are killed in the bombing of the 16th Street Baptist Church in Birmingham, Hedgeman mobilizes religious leaders to support the pending Civil Rights Act.</p></div></li>
+<li class="event" data-who="blackwell"><div class="year">1964</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#e08fc0;color:#e08fc0">Unita Blackwell</span></div><p>At Moon Lake Missionary Baptist Church, Blackwell meets SNCC workers and stands up to register to vote. She becomes a SNCC field organizer and a delegate of the Mississippi Freedom Democratic Party at the Democratic National Convention.</p></div></li>
+<li class="event" data-who="height"><div class="year">1964</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#8fa8ff;color:#8fa8ff">Dorothy Height</span></div><p>Height helps organize a meeting in Atlanta of women's groups. It leads to Wednesdays in Mississippi, which she cofounds with Polly Cowan.</p></div></li>
+<li class="event" data-who="hedgeman movement"><div class="year">1964</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#e8806a;color:#e8806a">Anna Arnold Hedgeman</span><span class="chip" style="border-color:#c9d2e6;color:#c9d2e6">Movement events</span></div><p>On July 2, President Lyndon B. Johnson signs the Civil Rights Act. Hedgeman is among those invited to the White House ceremony.</p></div></li>
+<li class="event" data-who="coretta movement"><div class="year">1968</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#e0b34a;color:#e0b34a">Coretta Scott King</span><span class="chip" style="border-color:#c9d2e6;color:#c9d2e6">Movement events</span></div><p>Martin Luther King Jr. is assassinated on April 4. On June 26, Coretta Scott King founds the King Center in Atlanta.</p></div></li>
+<li class="event" data-who="blackwell"><div class="year">1973</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#e08fc0;color:#e08fc0">Unita Blackwell</span></div><p>Blackwell travels to China with Shirley MacLaine and eleven other women. She will return sixteen more times.</p></div></li>
+<li class="event" data-who="blackwell"><div class="year">1976</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#e08fc0;color:#e08fc0">Unita Blackwell</span></div><p>Blackwell is elected mayor of Mayersville, Mississippi, the first Black woman elected mayor in the state. She serves until 2001.</p></div></li>
+<li class="event" data-who="hall"><div class="year">1977</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#8fcf7a;color:#8fcf7a">Prathia Hall</span></div><p>Hall is ordained, one of the first women ordained in the American Baptist Church.</p></div></li>
+<li class="event" data-who="coretta movement"><div class="year">1979</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#e0b34a;color:#e0b34a">Coretta Scott King</span><span class="chip" style="border-color:#c9d2e6;color:#c9d2e6">Movement events</span></div><p>A King holiday bill, first introduced in 1968 by Representative John Conyers, finally reaches a House vote and fails by five votes.</p></div></li>
+<li class="event" data-who="coretta movement"><div class="year">1983</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#e0b34a;color:#e0b34a">Coretta Scott King</span><span class="chip" style="border-color:#c9d2e6;color:#c9d2e6">Movement events</span></div><p>On November 2, President Ronald Reagan signs the King holiday bill after years of advocacy by Coretta Scott King and others. The first national observance is in 1986.</p></div></li>
+<li class="event" data-who="coretta"><div class="year">1985</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#e0b34a;color:#e0b34a">Coretta Scott King</span></div><p>Coretta Scott King and others are arrested at the South African embassy in Washington during an anti-apartheid protest.</p></div></li>
+<li class="event" data-who="hedgeman"><div class="year">1990</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#e8806a;color:#e8806a">Anna Arnold Hedgeman</span></div><p>Anna Arnold Hedgeman dies on January 17 at age 90.</p></div></li>
+<li class="event" data-who="blackwell"><div class="year">1992</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#e08fc0;color:#e08fc0">Unita Blackwell</span></div><p>Blackwell receives a MacArthur Foundation fellowship, often called the genius grant.</p></div></li>
+<li class="event" data-who="height"><div class="year">1994</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#8fa8ff;color:#8fa8ff">Dorothy Height</span></div><p>Height receives the Presidential Medal of Freedom.</p></div></li>
+<li class="event" data-who="hall"><div class="year">2002</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#8fcf7a;color:#8fcf7a">Prathia Hall</span></div><p>Prathia Hall dies on August 12 in Boston at age 62.</p></div></li>
+<li class="event" data-who="height"><div class="year">2004</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#8fa8ff;color:#8fa8ff">Dorothy Height</span></div><p>Height receives the Congressional Gold Medal.</p></div></li>
+<li class="event" data-who="coretta"><div class="year">2006</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#e0b34a;color:#e0b34a">Coretta Scott King</span></div><p>Coretta Scott King dies on January 30 in Rosarito, Mexico, at age 78.</p></div></li>
+<li class="event" data-who="height"><div class="year">2010</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#8fa8ff;color:#8fa8ff">Dorothy Height</span></div><p>Dorothy Height dies on April 20 in Washington, D.C., at age 98. President Barack Obama speaks at her funeral.</p></div></li>
+<li class="event" data-who="dee"><div class="year">2014</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#4fb3a9;color:#4fb3a9">Ruby Dee</span></div><p>Ruby Dee dies on June 11 at her home in New Rochelle, New York, at age 91.</p></div></li>
+<li class="event" data-who="blackwell"><div class="year">2019</div><div class="evbody"><div class="chips"><span class="chip" style="border-color:#e08fc0;color:#e08fc0">Unita Blackwell</span></div><p>Unita Blackwell dies on May 13 in Ocean Springs, Mississippi, at age 86.</p></div></li>
+</ol>
+</section>
+
+<section id="videos">
+  <h2>Videos</h2>
+  <div class="note"><strong>TED-Ed result:</strong> I searched TED, TED-Ed and YouTube for all six women and found no TED-Ed lesson about any of them. The closest TED and TED-Ed material is below. I could not play the videos, so descriptions come from each page's text. Preview anything before class.</div>
+  <h3>Closest TED and TED-Ed options</h3>
+  <div class="vid"><h4>The most powerful woman you've never heard of (TED Talk, about 13 minutes)</h4><p class="by">T. Morgan Dixon and Vanessa Garrison, TED2018</p><p>Best bridge to this lesson. It tells the story of Septima Clark's citizenship schools, where ordinary women learned to read so they could vote. That links to Unita Blackwell's experience with literacy tests and to the theme of Celeste Headlee's book. The talk also names Fannie Lou Hamer, who appears in Tisby's chapter.</p><p class="learn"><a href="https://www.ted.com/talks/t_morgan_dixon_and_vanessa_garrison_the_most_powerful_woman_you_ve_never_heard_of" target="_blank" rel="noopener">Watch on TED</a> &nbsp;|&nbsp; <a href="https://www.youtube.com/watch?v=XXllBMHeKJE" target="_blank" rel="noopener">Watch on YouTube</a> &nbsp;|&nbsp; <a href="https://ed.ted.com/lessons/the-most-powerful-woman-you-ve-never-heard-of-t-morgan-dixon-and-vanessa-garrison" target="_blank" rel="noopener">TED-Ed lesson page</a></p></div>
+<div class="vid"><h4>An unsung hero of the civil rights movement (TED-Ed animation)</h4><p class="by">Christina Greer, TED-Ed</p><p>About Bayard Rustin, the chief organizer of the 1963 March on Washington. It does not mention any of the six women, but it shows another person whose organizing work was long overlooked, and it pairs well with Hedgeman and Height's roles in the same March. The page does not list a runtime, so preview it first.</p><p class="learn"><a href="https://ed.ted.com/lessons/an-unsung-hero-of-the-civil-rights-movement-christina-greer" target="_blank" rel="noopener">TED-Ed lesson page</a></p></div>
+<div class="vid"><h4>The hidden life of Rosa Parks (TED-Ed animation)</h4><p class="by">Riché D. Richardson, TED-Ed</p><p>Optional context. Rosa Parks is not profiled in Chapter 8, but this lesson covers the Montgomery bus boycott that Coretta Scott King and Martin Luther King Jr. were pulled into in December 1955. The page does not list a runtime, so preview it first.</p><p class="learn"><a href="https://ed.ted.com/lessons/the-hidden-life-of-rosa-parks-riche-d-richardson" target="_blank" rel="noopener">TED-Ed lesson page</a></p></div>
+  <h3>YouTube clips on the six women</h3>
+  <p>Found by search, not watched. Titles and descriptions are from the listings. Pick your own 60 to 90 second segment after previewing.</p>
+  <ul class="clips">
+    <li><span class="chip" style="border-color:#e0b34a;color:#e0b34a">Coretta Scott King</span> <a href="https://www.youtube.com/watch?v=8FlFKG5p31k" target="_blank" rel="noopener">Coretta Scott King: My Childhood as a Tomboy / Growing into a Lady</a><br><span class="desc">The Visionary Project interview, 3 minutes 44 seconds. Her own voice on growing up. Shortest option on this page.</span></li>
+<li><span class="chip" style="border-color:#e0b34a;color:#e0b34a">Coretta Scott King</span> <a href="https://www.youtube.com/watch?v=2B-7RhNgYNA" target="_blank" rel="noopener">Coretta Scott King Speaks! Ten Commandments on Vietnam</a><br><span class="desc">Her April 27, 1968, address in Central Park, New York, weeks after her husband's death.</span></li>
+<li><span class="chip" style="border-color:#4fb3a9;color:#4fb3a9">Ruby Dee</span> <a href="https://www.youtube.com/watch?v=n1lkXRjC8i0" target="_blank" rel="noopener">Angela Davis with Ossie Davis and Ruby Dee (2002)</a><br><span class="desc">An Evening With Ossie Davis and Ruby Dee, a look at the life of the activist couple.</span></li>
+<li><span class="chip" style="border-color:#e8806a;color:#e8806a">Anna Arnold Hedgeman</span> <a href="https://www.youtube.com/watch?v=fTgwN4-fOoU" target="_blank" rel="noopener">Hidden Figures: Anna Arnold Hedgeman</a><br><span class="desc">A short Black history month feature on her string of firsts, including being the only woman on the March's administrative committee.</span></li>
+<li><span class="chip" style="border-color:#8fa8ff;color:#8fa8ff">Dorothy Height</span> <a href="https://www.youtube.com/watch?v=LfA9Am-rZTw" target="_blank" rel="noopener">A Conversation with Dorothy Height, National Portrait Gallery</a><br><span class="desc">A 1997 interview at the Smithsonian's National Portrait Gallery.</span></li>
+<li><span class="chip" style="border-color:#8fa8ff;color:#8fa8ff">Dorothy Height</span> <a href="https://www.pbs.org/newshour/classroom/daily-videos/2023/08/remembering-civil-rights-leader-dorothy-height" target="_blank" rel="noopener">Remembering Civil Rights Leader Dorothy Height, PBS NewsHour Classroom</a><br><span class="desc">A short PBS video with classroom questions, including Height on her experience as a woman activist.</span></li>
+<li><span class="chip" style="border-color:#8fcf7a;color:#8fcf7a">Prathia Hall</span> <a href="https://www.youtube.com/watch?v=PSuC15uLlAA" target="_blank" rel="noopener">A Nightmare in Broad Daylight (sermon), Rev. Dr. Prathia Hall</a><br><span class="desc">Hear her preach. This is the clip most likely to land with your class after reading about her.</span></li>
+<li><span class="chip" style="border-color:#8fcf7a;color:#8fcf7a">Prathia Hall</span> <a href="https://www.youtube.com/watch?v=ImXpIerl0jI" target="_blank" rel="noopener">The Preaching of Prathia Hall, Bishop Walter S. Thomas</a><br><span class="desc">A short clip from the African American Legacy Preaching Series, on what made her preaching memorable.</span></li>
+<li><span class="chip" style="border-color:#e08fc0;color:#e08fc0">Unita Blackwell</span> <a href="https://www.youtube.com/watch?v=Obxkjdo5tYo" target="_blank" rel="noopener">Unita Blackwell, hosted by Mayor Robyn Tannehill</a><br><span class="desc">A short biography that opens with her arrival in Issaquena County, Mississippi, a county without one registered Black voter.</span></li>
+<li><span class="chip" style="border-color:#e08fc0;color:#e08fc0">Unita Blackwell</span> <a href="https://www.youtube.com/watch?v=agJXY29XdLM" target="_blank" rel="noopener">Mississippi Black History: Unita Blackwell, FOX40</a><br><span class="desc">A local news feature on her life and her election as mayor of Mayersville.</span></li>
+  </ul>
+  <p><strong>Also worth knowing:</strong> the 2026 PBS documentary <em>Of the People: Women of the Civil Rights Movement</em> (about 54 minutes) profiles Ella Baker, who opens Tisby's chapter, along with Fannie Lou Hamer and others. <a href="https://www.pbs.org/show/of-the-people-women-of-the-civil-rights-movement" target="_blank" rel="noopener">PBS page</a></p>
+</section>
+
+<section id="podcast">
+  <h2>Podcast: Freedom's Daughters</h2>
+  <div class="pod">
+    <h3>"Freedom's Daughters": Journalist Celeste Headlee profiles her great grandmother and others</h3>
+    <p>WBUR <em>Here &amp; Now</em>, aired October 7, 2026. Host Robin Young talks with journalist Celeste Headlee. Runtime 11:56.</p>
+    <p><a class="btn" href="https://www.wbur.org/hereandnow/2026/10/07/freedoms-daughters-book" target="_blank" rel="noopener">Listen on WBUR</a> &nbsp; <a href="https://www.ctpublic.org/2026-10-07/freedoms-daughters-journalist-celeste-headlee-profiles-her-great-grandmother-and-others" target="_blank" rel="noopener">Connecticut Public repost</a></p>
+  </div>
+  <h4>About the book</h4>
+  <p><em>Freedom's Daughters: How a Generation of Black Women Resisted Oppression Through Literacy and Education</em> by Celeste Headlee (Flatiron Books, published October 6, 2026). It centers on Headlee's great grandmother, Carrie Still Shepperson, born during the Civil War, who graduated from college, became a teacher, and gave her life to education and literacy for Black people in the South. According to the publisher's description, Headlee spent nearly a decade piecing together her story and those of the women who worked alongside her.</p>
+  <p class="note"><strong>Two notes:</strong> This is a WBUR and NPR program, not a PBS one (the page is hosted by Connecticut Public, an NPR member station, and many stations repost it). Also, I could not listen to the audio, so the prompts below come from the book's description and the segment's page, not the interview itself. Listen once before class and add one specific moment.</p>
+  <h4>Bridge to Chapter 8</h4>
+  <ol>
+    <li>Carrie Still Shepperson taught freed people to read after the Civil War. A century later, Unita Blackwell faced a literacy test at the registrar's office. How are literacy and the vote connected across those two eras?</li>
+    <li>Headlee says it took nearly a decade to recover her great grandmother's story. Tisby says the movement's story has been told mostly through men. What does it take to recover a history that was never written down, and who decides whose story is recorded?</li>
+    <li>Several of Tisby's six women were teachers (Hedgeman at Rust College, Hall at seminary, Height as a young Bible teacher). What is the role of teaching in the work of freedom?</li>
+    <li>Who in our own families or in our congregation's history carried this work without being named?</li>
+  </ol>
+</section>
+
+<section id="discuss">
+  <h2>Discussion questions</h2>
+  <p>Moving from understanding, to personal reflection, to communal accountability.</p>
+  <ol class="q"><li><span class="qtype">Understanding</span><p>Tisby says women were the majority of the movement's participants yet were often kept from the pulpit and the platform. Which of the six profiles shows that gap most clearly, and how did she respond to it?</p></li><li><span class="qtype">Faith</span><p>Prathia Hall called it "freedom faith," a faith that has to be lived. Choose one moment from the chapter (Coretta Scott King after the bombing, Anna Arnold Hedgeman after Birmingham, Unita Blackwell standing up) and describe what her faith asked of her.</p></li><li><span class="qtype">Personal</span><p>Whose story in this chapter was new to you? Where did you first learn the story of the civil rights movement, and who was missing from that telling?</p></li><li><span class="qtype">Our congregation</span><p>These women built and sustained institutions: the NCNW, the YWCA, a church commission, a town government. What behind-the-scenes work does our congregation depend on, who does it, and who gets named from the front?</p></li><li><span class="qtype">Accountability</span><p>Celeste Headlee ties freedom to literacy and education, and Unita Blackwell faced a literacy test at the registrar's office. Where, in Charlotte today, do people still face barriers to education or to the ballot, and what is one concrete step our class could take?</p></li></ol>
+  <div class="verse">
+    <p class="ref">Closing: return to Luke 4:18</p>
+    <p>Ask the class: whose freedom work in this chapter will you carry with you this week?</p>
+  </div>
+</section>
+
+<section id="factcheck">
+  <h2>Fact check</h2>
+  <p>Claims from the chapter and the profiles that deserve a note before they are shared with the group.</p>
+  <table>
+    <thead><tr><th scope="col">Claim</th><th scope="col">Rating</th><th scope="col">Note</th></tr></thead>
+    <tbody><tr><th scope="row">Prathia Hall's birth date</th><td class="rating">Disputed</td><td>Tisby gives June 29, 1940, matching the Freedom Faith biography. Wikipedia, the SNCC Digital Gateway and EBSCO give January 1, 1940. Use "1940" on slides unless you want to show the disagreement as a media literacy example.</td></tr><tr><th scope="row">Hall's "I have a dream" prayer inspired King</th><td class="rating">Plausible, based on oral history</td><td>Tisby himself hedges ("substantial evidence from oral history suggests"). It rests on testimony and on Courtney Pace's biography, not on a transcript. Present it as a strong claim from oral history, not as settled fact.</td></tr><tr><th scope="row">The King holiday: "another three years" after the failed 1979 vote</th><td class="rating">Slightly imprecise</td><td>The 1979 House vote failed by five votes. The House passed the bill on August 2, 1983, and President Reagan signed it on November 2, 1983, so about four years later.</td></tr><tr><th scope="row">Ruby Dee "born in Ohio"</th><td class="rating">Correct, with more detail available</td><td>Cleveland, Ohio, on October 27, 1922 (Britannica).</td></tr><tr><th scope="row">Hedgeman recruited more than 40,000 white Protestants</th><td class="rating">Not independently confirmed</td><td>This figure is Tisby's. I did not find a second source for the number, so attribute it to him.</td></tr><tr><th scope="row">Unita Blackwell, first Black woman mayor in Mississippi</th><td class="rating">Correct</td><td>Confirmed by the Associated Press obituary and the Town of Mayersville. She served from 1976 to 2001.</td></tr><tr><th scope="row">Dorothy Height: Presidential Medal of Freedom and Congressional Gold Medal</th><td class="rating">Correct</td><td>1994 and 2004 (National Park Service). One BlackPast entry says both came in 2000, which appears to be an error.</td></tr></tbody>
+  </table>
+</section>
+
+<section id="sources">
+  <h2>Sources</h2>
+  <ul class="srcs"><li>Jemar Tisby, The Spirit of Justice, Chapter 8, "Women of the Movement" (base text for all profiles; screenshots supplied by Wes Fryer)</li><li><a href="https://www.wbur.org/hereandnow/2026/10/07/freedoms-daughters-book" target="_blank" rel="noopener">Celeste Headlee, Freedom's Daughters, WBUR Here &amp; Now page</a></li><li><a href="https://www.ctpublic.org/2026-10-07/freedoms-daughters-journalist-celeste-headlee-profiles-her-great-grandmother-and-others" target="_blank" rel="noopener">Connecticut Public repost of the Here &amp; Now segment</a></li><li><a href="https://www.netgalley.com/catalog/book/793635" target="_blank" rel="noopener">NetGalley description of Freedom's Daughters</a></li><li><a href="https://kinginstitute.stanford.edu/king-coretta-scott" target="_blank" rel="noopener">King Institute, Stanford: Coretta Scott King</a></li><li><a href="https://kinginstitute.stanford.edu/king-national-holiday" target="_blank" rel="noopener">King Institute, Stanford: King national holiday</a></li><li><a href="https://www.britannica.com/biography/Ruby-Dee" target="_blank" rel="noopener">Encyclopaedia Britannica: Ruby Dee</a></li><li><a href="https://blackpast.org/aah/hedgeman-anna-arnold-1899-1990" target="_blank" rel="noopener">BlackPast: Anna Arnold Hedgeman</a></li><li><a href="https://www.womenshistory.org/education-resources/biographies/anna-arnold-hedgeman" target="_blank" rel="noopener">National Women's History Museum: Anna Arnold Hedgeman</a></li><li><a href="https://www.nps.gov/people/dorothy-i-height.htm" target="_blank" rel="noopener">National Park Service: Dorothy I. Height</a></li><li><a href="https://www.britannica.com/biography/Dorothy-Height" target="_blank" rel="noopener">Encyclopaedia Britannica: Dorothy Height</a></li><li><a href="https://snccdigital.org/people/prathia-hall/" target="_blank" rel="noopener">SNCC Digital Gateway: Prathia Hall</a></li><li><a href="https://www.pbs.org/thisfarbyfaith/people/prathia_hall.html" target="_blank" rel="noopener">PBS, This Far by Faith: Prathia Hall</a></li><li><a href="https://www.ebsco.com/research-starters/womens-studies-and-feminism/prathia-hall" target="_blank" rel="noopener">EBSCO Research Starters: Prathia Hall</a></li><li><a href="https://mswritersandmusicians.com/mississippi-writers/unita-blackwell" target="_blank" rel="noopener">Mississippi Writers and Musicians: Unita Blackwell</a></li><li><a href="https://www.mayersville.ms.gov/node/36" target="_blank" rel="noopener">Town of Mayersville: Unita Blackwell</a></li><li><a href="https://www.ted.com/talks/t_morgan_dixon_and_vanessa_garrison_the_most_powerful_woman_you_ve_never_heard_of" target="_blank" rel="noopener">TED: The most powerful woman you've never heard of</a></li><li><a href="https://ed.ted.com/lessons/an-unsung-hero-of-the-civil-rights-movement-christina-greer" target="_blank" rel="noopener">TED-Ed: An unsung hero of the civil rights movement</a></li><li><a href="https://ed.ted.com/lessons/the-hidden-life-of-rosa-parks-riche-d-richardson" target="_blank" rel="noopener">TED-Ed: The hidden life of Rosa Parks</a></li></ul>
+</section>
+
+</main>
+
+<footer>
+  <p>Prepared with help from Claude, an AI assistant, for Wes Fryer. Tisby's chapter is the base text. Dates and places were checked against the sources listed above; please verify anything you plan to quote. The book's quotations are limited to short phrases, and all other wording is a paraphrase.</p>
+</footer>
+</div>
+<script>
+(function () {
+  var buttons = Array.prototype.slice.call(document.querySelectorAll('.fbtn'));
+  var events = Array.prototype.slice.call(document.querySelectorAll('.event'));
+  function apply(filter) {
+    events.forEach(function (ev) {
+      var who = ev.getAttribute('data-who').split(' ');
+      ev.hidden = !(filter === 'all' || who.indexOf(filter) !== -1);
+    });
+    buttons.forEach(function (b) {
+      b.setAttribute('aria-pressed', b.getAttribute('data-filter') === filter ? 'true' : 'false');
+    });
+  }
+  buttons.forEach(function (b) {
+    b.addEventListener('click', function () { apply(b.getAttribute('data-filter')); });
+  });
+})();
+</script>
+</body>
+</html>
