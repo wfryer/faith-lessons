@@ -1,5 +1,7 @@
 # Faith Formation Lessons
 
+**Live lessons index: [wfryer.github.io/faith-lessons](https://wfryer.github.io/faith-lessons/)**
+
 Lesson pages for adult Sunday school and small group study, by Wes Fryer. Each lesson is a single self-contained HTML page in its own folder, and `index.html` at the top lists them.
 
 ## Layout
