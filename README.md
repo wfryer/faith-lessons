@@ -8,6 +8,7 @@ Lesson pages for adult Sunday school and small group study, by Wes Fryer. Each l
 index.html                                  the lessons index
 .nojekyll                                   tells GitHub Pages to serve files as they are
 2026-11-08-spirit-of-justice-ch8/index.html Women of the Movement (Spirit of Justice, Chapter 8)
+2026-11-08-1526-week18-creole-mutiny/index.html The Creole Mutiny of 1841 (Project 1526, Week 18)
 ```
 
 Folder names start with the class date (year, month, day) so they sort in order. Each lesson folder holds one `index.html`, so its web address ends at the folder name.
